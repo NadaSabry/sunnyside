@@ -4,10 +4,11 @@
     background-position: center;
     height: 100vh;
     overflow: hidden;
-    @media (max-width:400px) {
+    @media (max-width:600px) {
         background-image: url("^assets/images/mobile/image-header.jpg");
-        background-size:100% 70vh ;
-        height: 70vh;
+        background-size:cover ;
+        background-position: center;
+        height: 540px;
     }
 }
 h1{

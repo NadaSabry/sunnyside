@@ -1,0 +1,70 @@
+.container-fluidd{
+    display:grid;
+    grid-template-areas:
+    "egg-text egg"
+    "vasa vasa-text"
+    "kriz orangee";
+}
+.alldiv{
+    height:500px;
+}
+.egg{
+  grid-area: egg;
+  background-image: url("^assets/images/desktop/image-transform.jpg");
+  background-size: cover;
+  background-position: center
+}
+.egg-text{
+    grid-area: egg-text;
+}
+.vasa{
+    grid-area: vasa;
+    background-image: url("^assets/images/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-position: center
+}
+.vasa-text{
+    grid-area: vasa-text;
+}
+.kriz{
+    grid-area: kriz;
+    background-image: url("^assets/images/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center
+}
+.orangee{
+    grid-area: orangee;
+    background-image: url("^assets/images/desktop/image-photography.jpg");
+    background-size: cover;
+    background-position: center
+}
+@media (max-width:600px){
+    .container-fluidd{
+        grid-template-areas:
+        "egg"
+        "egg-text"
+        "vasa"
+        "vasa-text"
+        "kriz"
+        "orangee";
+    }
+    .alldiv{
+        height:440px;
+    }
+    .orangee{
+        background-image: url("^assets/images/mobile/image-photography.jpg");
+        height: 600px;
+    }
+    .kriz{
+        background-image: url("^assets/images/mobile/image-graphic-design.jpg");
+        height:600px;
+    }
+    .vasa{
+        background-image: url("^assets/images/mobile/image-stand-out.jpg");
+        height:313px;
+    }
+    .egg{
+        background-image: url("^assets/images/mobile/image-transform.jpg");
+        height:313px;
+    }
+}

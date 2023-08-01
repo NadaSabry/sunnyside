@@ -1,9 +1,12 @@
-<nav class="row">
-    <div class="col brand m-4">
+
+<nav class="m-4">
+    <div class="brand">
         <img src="assets/images/logo.svg" alt="logo">
+        <svg class="toggle" *ngIf="mobileScreen" (click)="toggleMenu()" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
     </div>
    <!-- <img src="assets/images/icon-hamburger.svg" class="hidden">  -->
-    <div class="col triangle m-4">
+    <div class="menu" *ngIf="(mobileScreen == false || toggle==true)">
+      <div class="triangle-element"></div>
         <ul>
           <li> <a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>

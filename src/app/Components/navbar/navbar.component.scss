@@ -1,3 +1,9 @@
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
 ol,li{
     list-style: none;
 }
@@ -5,8 +11,8 @@ ul{
     display: flex;
     flex-direction: row;
     gap:0.5rem;
-    //background-color: burlywood;
     justify-content:flex-end;
+    align-items: center;
 }
 li a{
     display: block;
@@ -30,4 +36,48 @@ li a{
     text-transform: uppercase;
     background-color: hsl(199,100%,71%);///rgba(255, 255, 255, 0.428);
     color:var(--White);
+}
+.menu{
+    width:100%;
+}
+
+@media (max-width:600px){
+    nav{
+      flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        color:black;
+        padding: 25px;
+        position: absolute;
+        width: 86%;
+        top: 105px;
+        left: 7%;
+    }
+    li a{
+        color: black;
+    }
+    #active,#active:hover,li a:hover{
+        background-color: var(--Yellow);///rgba(255, 255, 255, 0.428);
+        color: black;
+    }
+    .triangle-element {
+        width: 25px;
+        height: 26px;
+        background: linear-gradient(to bottom right, #00000000 0%, #00000000 50%, white 50%, white 100%);
+        position: absolute;
+        top: 80px;
+        right: 7%;
+    }
+    .brand{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+    }
+    .toggle:hover{
+      cursor: pointer;
+    }
 }
