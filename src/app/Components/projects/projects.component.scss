@@ -5,7 +5,7 @@ font-family: 'Fraunces', serif; 700,900
 #projects {
     padding: 120px;
     text-align: center;
-    height: 100vh;
+    height: auto;
 }
 
 .title {
@@ -33,6 +33,16 @@ font-family: 'Fraunces', serif; 700,900
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.name{
+    font-family: 'Fraunces', serif; 
+    font-weight: 900;
+}
+.job{
+    color:var(--Grayish-blue);
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
 }
 
 @media (max-width:600px) {
