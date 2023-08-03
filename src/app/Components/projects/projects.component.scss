@@ -1,0 +1,52 @@
+/*
+font-family: 'Barlow', sans-serif; 600
+font-family: 'Fraunces', serif; 700,900
+*/
+#projects {
+    padding: 120px;
+    text-align: center;
+    height: 100vh;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: var(--Grayish-blue);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    margin-top: 70px;
+}
+.bigp{
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    color:hsl(240,2%,46%);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-row-gap: 70px;
+    }
+    #projects {
+        padding:70px 40px;
+        text-align: center;
+        height: auto;
+    }
+    .title {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+}

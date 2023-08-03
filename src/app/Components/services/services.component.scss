@@ -34,6 +34,8 @@
 }
 p{
     color:hsl(249, 3%, 39%);
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
 }
 h6{
     font-family: 'Fraunces', serif;
@@ -46,10 +48,6 @@ h6:hover{
     text-decoration-thickness: 7px;
     cursor: pointer;
 }    //padding:150px;
-    /*
-font-family: 'Barlow', sans-serif; 600
-font-family: 'Fraunces', serif; 700,900
-*/
 .vasa{
     grid-area: vasa;
     background-image: url("^assets/images/desktop/image-stand-out.jpg");
@@ -71,6 +69,9 @@ font-family: 'Fraunces', serif; 700,900
     background-size: cover;
     background-position: center
 }
+#spec{
+    padding: 7% 21%;
+}
 @media (max-width:600px){
     .container-fluidd{
         grid-template-areas:
@@ -85,7 +86,10 @@ font-family: 'Fraunces', serif; 700,900
     }
     .alldiv{
         height:440px;
-        padding: 30px;
+        padding: 25px;
+    }
+    #spec{
+        padding: 25px; 
     }
     .orangee{
         background-image: url("^assets/images/mobile/image-photography.jpg");
