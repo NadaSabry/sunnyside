@@ -51,8 +51,7 @@ h6::after{
     width: 140px;
     left:-10px;
     @media (max-width:600px){
-        left: 30%;
-        width: 135px;
+        left: calc(50% - 70px); 
     }
     bottom: -2px;
     height: 10px;
