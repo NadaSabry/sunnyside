@@ -13,8 +13,8 @@
     flex-direction: column;
     justify-content: center;
 }
-#vasa-learn:hover{
-    text-decoration-color:var(--Soft-red);
+#vasa-learn::after{
+    background-color:var(--Soft-red);
 }
 .tex{
     width: 40%;
@@ -39,15 +39,28 @@ p{
 }
 h6{
     font-family: 'Fraunces', serif;
-    font-weight: 700; 
+    font-weight: 900; 
     font-size: medium;
-}
-h6:hover{
-    text-decoration: underline;
-    text-decoration-color: yellow;
-    text-decoration-thickness: 7px;
+    color: var(--Very-d-des-blue);
+    position: relative;
     cursor: pointer;
-}    //padding:150px;
+}
+h6::after{
+    content: "";
+    display: block;
+    width: 140px;
+    left:-10px;
+    @media (max-width:600px){
+        left: 30%;
+        width: 135px;
+    }
+    bottom: -2px;
+    height: 10px;
+    background-color: var(--Yellow);
+    border-radius: 20px;
+    z-index: -1;
+    position: absolute;
+}
 .vasa{
     grid-area: vasa;
     background-image: url("^assets/images/desktop/image-stand-out.jpg");

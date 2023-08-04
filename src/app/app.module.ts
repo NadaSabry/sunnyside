@@ -8,6 +8,7 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { ServicesComponent } from './Components/services/services.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { PhotosComponent } from './Components/photos/photos.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PhotosComponent } from './Components/photos/photos.component';
     NavbarComponent,
     ServicesComponent,
     ProjectsComponent,
-    PhotosComponent
+    PhotosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
